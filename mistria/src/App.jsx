@@ -30,7 +30,7 @@ function App() {
         <h2>About</h2>
         <text>This is a profile maker inspired by NPC Studio's <a href="Fields of Mistria">Fields of Mistria</a>. Create your own character page as it would appear in the game!</text>
         <h2>Instructions</h2>
-        <text>Click on the profile or any of the liked or loved items to upload your own image. You can download game sprites from the <a href="https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki">Fields of Mistria Wiki</a>.</text>
+        <text>Click on the profile or any of the liked items to upload your own image. You can download game sprites from the <a href="https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki">Fields of Mistria Wiki</a>.</text>
         <div className='bio-container'>
           <text>Tip: If you want to follow in-game design rules, arrange your likes and loves in alpahebtical order.</text>
         </div>
@@ -41,8 +41,6 @@ function App() {
           <div className="flex-child">
           <img src={logo} width="250px"/>
             {portrait()}
-            <br></br>
-            <textarea className="textarea" name="description" defaultValue="Enter description" />
           </div>
           <div className="flex-child">
             <h2>Loved Gifts</h2>
@@ -118,7 +116,7 @@ function App() {
               height="35px"
               width="35px"
             />
-            <input className="input" name="relationship" defaultValue="Enter relationship status" />
+            <input className="input" name="relationship" defaultValue="Enter relationship info" />
           </div>
         </div>
       </div>
@@ -132,7 +130,7 @@ function App() {
           </li>
         </div>
         <h2> Disclaimer </h2>
-        <text>I am not affiliated with NPC Studios or Fields of Mistria in any capacity. This is a transformative fan work for which I am not making money. If you wish for this content to be modified or taken down, please send me a message.</text>
+        <text>I am not affiliated with NPC Studios or Fields of Mistria. This is a fan project for which I am not making money. If you wish for this content to be modified or taken down, please send me a message.</text>
         <h2> Contact </h2>
         <text>This page was made with love by Nela Jankechova, Toronto-based biologist and programmer. Please reach out!</text>
         <div className='bio-container'>
