@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className='panel-layout'>
-      <div className="panel-child small">
+      <div className="panel-child small" data-html2canvas-ignore="true">
         <img src={logo} className='fit' />
         <h1>Profile Maker</h1>
         <img src={magic} />
@@ -120,7 +120,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="panel-child small">
+      <div className="panel-child small" data-html2canvas-ignore="true">
         <h2> Download </h2>
         <div className='bio-container'>
           <li>
@@ -132,7 +132,7 @@ function App() {
         <h2> Disclaimer </h2>
         <text>I am not affiliated with NPC Studios or Fields of Mistria in any capacity. This is a transformative fan work for which I am not making money. If you wish for this content to be modified or taken down, please send me a message.</text>
         <h2> Contact </h2>
-        <text>This page was made with love by Nela Jankechova, aspiring biologist and programmer. </text>
+        <text>This page was made with love by Nela Jankechova, Toronto-based biologist and programmer. Please reach out!</text>
         <div className='bio-container'>
           <li>
             <a href="mailto:nelajankechova@gmail.com">
