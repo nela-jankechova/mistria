@@ -1,18 +1,38 @@
-
 @font-face {
   font-family: 'mistria';
   src: local('mistria'), url(./fonts/mistria.ttf) format('truetype');
 }
 
+.panel-layout {
+  display: flex;
+  width: 100%;
+}
+
+.panel-child {
+  flex: 1;
+  margin: 10px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-family: 'mistria';
+  background-color: #F9EDF8;
+  border: 4px solid #B6A7B7;
+
+}
+
+.small {
+  max-width: 20%;
+}
+
+.fit {
+  max-width:100%
+}
+
 #root {
-  max-width: 1280px;
   margin: 0 auto;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
   font-family: 'mistria';
-  background-color: #F9EDF8;
-  border: 4px solid #B6A7B7;
 }
 
 .grid-container {
@@ -47,7 +67,7 @@
   width: auto;
 }
 
-.bio-container{
+.bio-container {
   border: 4px solid #DACCDA;
   background-color: #F2E3ED;
   flex: 1;
