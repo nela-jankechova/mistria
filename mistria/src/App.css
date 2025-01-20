@@ -96,6 +96,13 @@
   min-width: 300px;
 }
 
+.textarea {
+  font-family: 'mistria';
+  background-color: transparent;
+  border: none;
+  font-size: small;
+  min-width: none;
+}
 .notdisplayed {
   display: none;
 }

@@ -39,8 +39,10 @@ function App() {
       <div className='panel-child'>
         <div className="flex-parent">
           <div className="flex-child">
-            <h2>Portrait</h2>
+          <img src={logo} width="250px"/>
             {portrait()}
+            <br></br>
+            <textarea className="textarea" name="description" defaultValue="Enter description" />
           </div>
           <div className="flex-child">
             <h2>Loved Gifts</h2>
