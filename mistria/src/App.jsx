@@ -34,7 +34,7 @@ function App() {
         <div className='bio-container'>
           <text>Tip: If you want to follow in-game design rules, arrange your likes and loves in alpahebtical order.</text>
         </div>
-        <text> When you're done, you can download a .png of your profile using the link at the bottom of the page.</text>
+        <text> When you're done, you can download your profile as a .png image.</text>
       </div>
       <div className='panel-child'>
         <div className="flex-parent">

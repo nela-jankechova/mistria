@@ -1,29 +1,29 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import './App.css'
 import example from './assets/example_portrait.png'
 
 const portrait = function () {
+
   const [file, setFile] = useState();
-  const [display, setDisplay] = useState("notdisplayed");
 
-  function handleChange(e) {
-    console.log(e.target.files);
-    setFile(URL.createObjectURL(e.target.files[0]));
-  }
+  const hiddenFileInput = useRef(null);
 
-  const showButton = e => {
-    e.preventDefault();
-    setDisplay("displayed");
+  const handleClick = (e) => {
+    hiddenFileInput.current.click();
   };
 
-  const hideButton = e => {
-    e.preventDefault();
-    setDisplay("notdisplayed");
+  const handleChange = (e) => {
+    setFile(URL.createObjectURL(e.target.files[0]));
   };
 
   return (
-    <div className="portrait-container" onChange={handleChange} onMouseEnter={e => showButton(e)} onMouseLeave={e => hideButton(e)}>
-      <input type="file" className={display} />
+    <div className="portrait-container" onClick={handleClick}>
+      <input
+        type="file"
+        onChange={handleChange}
+        ref={hiddenFileInput}
+        style={{ display: "none" }}
+      />
       <img className="portrait" src={file || example} alt="Portrait" />
     </div>
   );

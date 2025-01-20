@@ -24,7 +24,7 @@
 }
 
 .fit {
-  max-width:100%
+  max-width: 100%
 }
 
 #root {
@@ -43,6 +43,8 @@
 }
 
 .grid-item {
+  margin: none;
+  padding: none;
   border: 2px solid #B6A7B7;
 }
 
@@ -74,6 +76,12 @@
   margin: 10px;
 }
 
+.stretch {
+  object-fit: contain;
+  max-height: 50px;
+  max-width: 50px
+}
+
 .bio {
   display: grid;
   grid-template-columns: 4rem 10rem;
@@ -96,4 +104,12 @@
   display: flex;
   height: 20px;
   margin: auto;
+}
+
+.grid-item:hover {
+  opacity: 50%;
+}
+
+.portrait:hover {
+  opacity: 50%;
 }

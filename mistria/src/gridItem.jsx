@@ -1,30 +1,30 @@
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 import './App.css'
 import unknown from './assets/unknown_icon.png'
 
 const gridItem = function () {
   const [file, setFile] = useState();
-  const [display, setDisplay] = useState("notdisplayed");
+  const [display, setDisplay] = useState();
 
-  function handleChange(e) {
-    console.log(e.target.files);
-    setFile(URL.createObjectURL(e.target.files[0]));
-  }
+  const hiddenFileInput = useRef(null);
 
-  const showButton = e => {
-    e.preventDefault();
-    setDisplay("displayed");
+  const handleClick = (e) => {
+    hiddenFileInput.current.click();
   };
 
-  const hideButton = e => {
-    e.preventDefault();
-    setDisplay("notdisplayed");
+  const handleChange = (e) => {
+    setFile(URL.createObjectURL(e.target.files[0]));
   };
 
   return (
-    <div className="grid-item" onChange={handleChange} onMouseEnter={e => showButton(e)} onMouseLeave={e => hideButton(e)}>
-      <input type="file" className={display} />
-      <img src={file || unknown} height="50px" width="50px" />
+    <div className="grid-item" onClick={handleClick}>
+      <input
+        type="file"
+        onChange={handleChange}
+        ref={hiddenFileInput}
+        style={{ display: "none" }}
+      />
+      <img src={file || unknown} className="stretch"/>
     </div>
   );
 }
