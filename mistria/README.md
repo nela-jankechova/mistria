@@ -6,6 +6,8 @@ This is a profile maker inspired by [Aiza Belle's Stardew Valley OC Profile Make
 
 Click on the profile or any of the liked or loved items to upload your own image. You can download game sprites from the [Fields of Mistria Wiki] (https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki). (Tip: If you want to follow in-game design rules, arrange your likes and loves in alpahebtical order.) When you're done, you can download a .png of your profile using the link at the bottom of the page.
 
+!["Example Profile"](.\mistria\src\assets\example_profile.png)
+
 # Font
 
 I recreated the Fields of Mistria font using FontStruct. You can download it from FontStruct [here](https://fontstruct.com/fontstructions/show/2611132/fields-of-mistria) or downlaod `mistria.ttf` from this project.
