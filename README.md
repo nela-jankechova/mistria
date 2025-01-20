@@ -8,6 +8,7 @@ Click on the profile or any of the liked or loved items to upload your own image
 
 !["Example Profile"](https://github.com/nela-jankechova/mistria/blob/main/mistria/src/assets/example_profile.png)
 
+# Portraits
 There's no Fields of Mistria portrait maker (yet!). Consider using the [Stardew Valley Portrait Maker](https://jazzybee.itch.io/sdvcharactercreator), or comissioning an artist. You can also edit existing character sprites from the game following the instructions from [this tutorial](https://steamcommunity.com/sharedfiles/filedetails/?id=3305826941).
 
 # Font
