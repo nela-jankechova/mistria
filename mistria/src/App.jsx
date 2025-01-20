@@ -9,6 +9,7 @@ import birthday from './assets/birthday_icon.webp'
 import heart from './assets/heart_icon.webp'
 import player from './assets/player_icon.png'
 import job from './assets/job_icon.webp'
+import logo from './assets/logo.png'
 
 function App() {
 
