@@ -13,7 +13,7 @@ There's no Fields of Mistria portrait maker (yet!). Consider using the [Stardew 
 
 # Font
 
-I recreated the Fields of Mistria font using FontStruct. You can download it from FontStruct [here](https://fontstruct.com/fontstructions/show/2611132/fields-of-mistria) or downlaod `mistria.ttf` from this project.
+I recreated the Fields of Mistria font using FontStruct. You can download it from FontStruct [here](https://fontstruct.com/fontstructions/show/2611132/fields-of-mistria) or download `mistria.ttf` from this project.
 
 # Disclaimer
 
