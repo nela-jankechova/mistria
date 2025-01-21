@@ -1,7 +1,7 @@
+import React from 'react'
 import GridItem from './GridItem.jsx'
 import Portrait from './Portrait.jsx'
 import Downloader from './Downloader.jsx'
-import BioItem from './BioItem.jsx'
 import './styles/App.css'
 import birthday from './assets/birthday_icon.webp'
 import heart from './assets/heart_icon.webp'
@@ -9,6 +9,7 @@ import player from './assets/player_icon.png'
 import job from './assets/job_icon.webp'
 import logo from './assets/logo.png'
 import rosehip from './assets/rose_hip.png'
+
 
 function App() {
   return (

@@ -15,6 +15,9 @@ const Downloader = function (id) {
     downloadjs(dataURL, 'download.png', 'image/png');
   };
 
+
+  
+
   const handleCheckboxClick = () => {
     setChecked(!checked);
   };
