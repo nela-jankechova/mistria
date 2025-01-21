@@ -1,4 +1,4 @@
-import React from 'react'
+import { useState } from 'react'
 import GridItem from './GridItem.jsx'
 import Portrait from './Portrait.jsx'
 import Downloader from './Downloader.jsx'
@@ -11,7 +11,16 @@ import logo from './assets/logo.png'
 import rosehip from './assets/rose_hip.png'
 
 
+
 function App() {
+
+  const [checked, setChecked] = useState(true);
+  const [description, setDescription] = useState('');
+
+  const handleCheckboxClick = () => {
+    setChecked(!checked);
+  };
+
   return (
     <div className='panel-layout'>
       <div className="panel-child small" data-html2canvas-ignore="true">
@@ -24,13 +33,21 @@ function App() {
         <div className='rectangle-container'>
           <text>Tip: Arrange your likes and loves in alpahebtical order.</text>
         </div>
-        <Downloader/>
+        <div>
+          <input type="checkbox" checked={checked}
+            onChange={handleCheckboxClick} /> <text>Show Description</text>
+          <br />
+          <textarea name="description" maxLength={600} placeholder='Enter description' value={description}
+            onChange={e => setDescription(e.target.value)} />
+        </div>
+        <Downloader />
       </div>
       <div className='panel-child large' id="main-panel">
         <div className="flex-parent">
           <div className="flex-child">
             <div><img src={logo} width="250px" /></div>
             <Portrait />
+            <text className={checked ? "textarea" : "hidden"}>{description}</text>
           </div>
           <div className="flex-child">
             <h2>Loved Gifts</h2>

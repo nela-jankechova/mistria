@@ -20,14 +20,14 @@
 }
 
 .large {
-  max-width: fit-content
+  max-width: min-content
 }
 .small {
   max-width: 20%;
 }
 
 .fit {
-  max-width: 100%
+  max-width: 100%;
 }
 
 #root {
@@ -66,7 +66,7 @@
   font-size: 1.2em;
   background-color: transparent;
   border: none;
-  min-width: 300px;
+  min-width: 500px;
 }
 
 .textarea {
@@ -81,4 +81,13 @@
   display: grid;
   grid-template-columns: 4rem 10rem;
   margin: 0.5em;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+textarea {
+  resize:vertical;
+  width: 100%;
 }
