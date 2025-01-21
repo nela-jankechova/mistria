@@ -6,6 +6,7 @@
 .panel-layout {
   display: flex;
   width: 100%;
+  justify-content: center 
 }
 
 .panel-child {
