@@ -17,7 +17,7 @@ const portrait = function () {
   };
 
   return (
-    <div className="portrait-container" onClick={handleClick}>
+    <div onClick={handleClick}>
       <input
         type="file"
         onChange={handleChange}

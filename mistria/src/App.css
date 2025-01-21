@@ -39,13 +39,21 @@
   display: grid;
   grid-template-columns: 4rem 4rem 4rem 4rem 4rem;
   grid-gap: 0 rem;
-  border: 2px solid #B6A7B7;
 }
 
-.grid-item {
+/* .grid-item {
   margin: none;
   padding: none;
   border: 2px solid #B6A7B7;
+} */
+
+.stretch {
+  max-height: 50px;
+  max-width: 50px;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  border: 4px solid #B6A7B7;
 }
 
 .flex-parent {
@@ -58,15 +66,14 @@
   margin: 10px;
 }
 
-.portrait-container {
+.portrait {
+  max-height: 300px;
+  max-width: 200px;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
   border: 12px solid #5A525B;
   border-style: double;
-}
-
-.portrait {
-  max-height: 250px;
-  max-width: 200px;
-  width: auto;
 }
 
 .bio-container {
@@ -74,12 +81,6 @@
   background-color: #F2E3ED;
   flex: 1;
   margin: 10px;
-}
-
-.stretch {
-  object-fit: contain;
-  max-height: 50px;
-  max-width: 50px
 }
 
 .bio {
@@ -103,6 +104,7 @@
   font-size: small;
   min-width: none;
 }
+
 .notdisplayed {
   display: none;
 }

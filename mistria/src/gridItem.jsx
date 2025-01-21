@@ -24,7 +24,7 @@ const gridItem = function () {
         ref={hiddenFileInput}
         style={{ display: "none" }}
       />
-      <img src={file || unknown} className="stretch"/>
+      <img src={file || unknown} className="stretch" />
     </div>
   );
 }

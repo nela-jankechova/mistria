@@ -4,13 +4,11 @@ import html2canvas from 'html2canvas';
 import downloadjs from 'downloadjs';
 import './App.css'
 import './fonts/mistria.ttf'
-import background from './assets/background.webp'
 import birthday from './assets/birthday_icon.webp'
 import heart from './assets/heart_icon.webp'
 import player from './assets/player_icon.png'
 import job from './assets/job_icon.webp'
 import logo from './assets/logo.png'
-import magic from './assets/magic_icon.webp'
 import rosehip from './assets/rose_hip.png'
 
 function App() {
@@ -26,20 +24,26 @@ function App() {
       <div className="panel-child small" data-html2canvas-ignore="true">
         <img src={logo} className='fit' />
         <h1>Profile Maker</h1>
-        <img src={magic} />
         <h2>About</h2>
         <text>This is a profile maker inspired by NPC Studio's <a href="Fields of Mistria">Fields of Mistria</a>. Create your own character page as it would appear in the game!</text>
         <h2>Instructions</h2>
         <text>Click on the profile or any of the liked items to upload your own image. You can download game sprites from the <a href="https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki">Fields of Mistria Wiki</a>.</text>
         <div className='bio-container'>
-          <text>Tip: If you want to follow in-game design rules, arrange your likes and loves in alpahebtical order.</text>
+          <text>Tip: Arrange your likes and loves in alpahebtical order.</text>
         </div>
-        <text> When you're done, you can download your profile as a .png image.</text>
+        <h2> Download </h2>
+        <div className='bio-container'>
+          <li>
+            <a href="#" onClick={handleCaptureClick}>
+              Click to Download Image
+            </a>
+          </li>
+        </div>
       </div>
       <div className='panel-child'>
         <div className="flex-parent">
           <div className="flex-child">
-          <img src={logo} width="250px"/>
+          <div><img src={logo} width="250px" /></div>
             {portrait()}
           </div>
           <div className="flex-child">
@@ -121,14 +125,7 @@ function App() {
         </div>
       </div>
       <div className="panel-child small" data-html2canvas-ignore="true">
-        <h2> Download </h2>
-        <div className='bio-container'>
-          <li>
-            <a href="#" onClick={handleCaptureClick}>
-              Click to Download Image
-            </a>
-          </li>
-        </div>
+       
         <h2> Disclaimer </h2>
         <text>I am not affiliated with NPC Studios or Fields of Mistria. This is a fan project for which I am not making money. If you wish for this content to be modified or taken down, please send me a message.</text>
         <h2> Contact </h2>
