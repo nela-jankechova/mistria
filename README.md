@@ -6,13 +6,10 @@ This is a profile maker inspired by [Aiza Belle's Stardew Valley OC Profile Make
 
 Click on the profile or any of the liked or loved items to upload your own image. You can download game sprites from the [Fields of Mistria Wiki](https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki). (Tip: If you want to follow in-game design rules, arrange your likes and loves in alpahebtical order.) When you're done, you can download a .png of your profile using the download button.
 
-!["Site Screenshot"](https://github.com/nela-jankechova/mistria/blob/main/mistria/src/assets/example_site.png)
-
-Image 1: A screesnhot of the Fields of Mistria Profile Maker.
 
 !["Example Profile"](https://github.com/nela-jankechova/mistria/blob/main/mistria/src/assets/example_profile.png)
 
-Image 2: The result that is generated from the profile in Image 1 when downloaded.
+Image description: Sample profile.
 
 # Portraits
 There's no Fields of Mistria portrait maker (yet!). Consider using the [Stardew Valley Portrait Maker](https://jazzybee.itch.io/sdvcharactercreator), or commissioning an artist. You can also edit existing character sprites from the game following the instructions from [this tutorial](https://steamcommunity.com/sharedfiles/filedetails/?id=3305826941).
