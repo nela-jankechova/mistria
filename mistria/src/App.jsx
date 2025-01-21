@@ -23,9 +23,9 @@ function App() {
         <div className='rectangle-container'>
           <text>Tip: Arrange your likes and loves in alpahebtical order.</text>
         </div>
-        <Downloader />
+        <Downloader/>
       </div>
-      <div className='panel-child large'>
+      <div className='panel-child large' id="main-panel">
         <div className="flex-parent">
           <div className="flex-child">
             <div><img src={logo} width="250px" /></div>
