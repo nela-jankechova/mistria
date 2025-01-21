@@ -19,7 +19,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-  background-image: url("./assets/background.webp");
+  background-image: url("./src/assets/background.webp");
 }
 
 h1 {

@@ -1,8 +1,8 @@
 import { useState, useRef } from 'react'
-import './App.css'
+import './styles/Portrait.css'
 import example from './assets/example_portrait.png'
 
-const portrait = function () {
+const Portrait = function () {
 
   const [file, setFile] = useState();
 
@@ -29,4 +29,4 @@ const portrait = function () {
   );
 }
 
-export default portrait;
+export default Portrait;

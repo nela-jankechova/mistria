@@ -1,0 +1,13 @@
+.portrait {
+  max-height: 300px;
+  max-width: 200px;
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+  border: 12px solid #5A525B;
+  border-style: double;
+}
+
+.portrait:hover {
+  opacity: 50%;
+}

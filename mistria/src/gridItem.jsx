@@ -1,10 +1,9 @@
 import { useState, useRef } from 'react'
-import './App.css'
+import './styles/GridItem.css'
 import unknown from './assets/unknown_icon.png'
 
-const gridItem = function () {
+const GridItem = function () {
   const [file, setFile] = useState();
-  const [display, setDisplay] = useState();
 
   const hiddenFileInput = useRef(null);
 
@@ -24,9 +23,9 @@ const gridItem = function () {
         ref={hiddenFileInput}
         style={{ display: "none" }}
       />
-      <img src={file || unknown} className="stretch" />
+      <img src={file || unknown} className="grid-image" />
     </div>
   );
 }
 
-export default gridItem;
+export default GridItem;

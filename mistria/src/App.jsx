@@ -1,9 +1,8 @@
-import gridItem from './gridItem.jsx'
-import portrait from './portrait.jsx'
-import html2canvas from 'html2canvas';
-import downloadjs from 'downloadjs';
-import './App.css'
-import './fonts/mistria.ttf'
+import GridItem from './GridItem.jsx'
+import Portrait from './Portrait.jsx'
+import Downloader from './Downloader.jsx'
+import BioItem from './BioItem.jsx'
+import './styles/App.css'
 import birthday from './assets/birthday_icon.webp'
 import heart from './assets/heart_icon.webp'
 import player from './assets/player_icon.png'
@@ -12,13 +11,6 @@ import logo from './assets/logo.png'
 import rosehip from './assets/rose_hip.png'
 
 function App() {
-
-  const handleCaptureClick = async () => {
-    const canvas = await html2canvas(document.body);
-    const dataURL = canvas.toDataURL('image/png');
-    downloadjs(dataURL, 'download.png', 'image/png');
-  };
-
   return (
     <div className='panel-layout'>
       <div className="panel-child small" data-html2canvas-ignore="true">
@@ -28,64 +20,57 @@ function App() {
         <text>This is a profile maker inspired by NPC Studio's <a href="Fields of Mistria">Fields of Mistria</a>. Create your own character page as it would appear in the game!</text>
         <h2>Instructions</h2>
         <text>Click on the profile or any of the liked items to upload your own image. You can download game sprites from the <a href="https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki">Fields of Mistria Wiki</a>.</text>
-        <div className='bio-container'>
+        <div className='rectangle-container'>
           <text>Tip: Arrange your likes and loves in alpahebtical order.</text>
         </div>
-        <h2> Download </h2>
-        <div className='bio-container'>
-          <li>
-            <a href="#" onClick={handleCaptureClick}>
-              Click to Download Image
-            </a>
-          </li>
-        </div>
+        <Downloader />
       </div>
-      <div className='panel-child'>
+      <div className='panel-child large'>
         <div className="flex-parent">
           <div className="flex-child">
-          <div><img src={logo} width="250px" /></div>
-            {portrait()}
+            <div><img src={logo} width="250px" /></div>
+            <Portrait />
           </div>
           <div className="flex-child">
             <h2>Loved Gifts</h2>
             <div className="grid-container">
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
             </div>
             <h2>Liked Gifts</h2>
             <div className="grid-container">
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
-              {gridItem()}
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
+              <GridItem />
             </div>
           </div>
         </div>
-        <div className="bio-container">
+        <div className="rectangle-container">
           <div className="bio">
             <img
               src={player}
@@ -125,26 +110,25 @@ function App() {
         </div>
       </div>
       <div className="panel-child small" data-html2canvas-ignore="true">
-       
         <h2> Disclaimer </h2>
         <text>I am not affiliated with NPC Studios or Fields of Mistria. This is a fan project for which I am not making money. If you wish for this content to be modified or taken down, please send me a message.</text>
         <h2> Contact </h2>
         <text>This page was made with love by Nela Jankechova, Toronto-based biologist and programmer. Please reach out!</text>
-        <div className='bio-container'>
+        <div className='rectangle-container'>
           <li>
             <a href="mailto:nelajankechova@gmail.com">
               Email
             </a>
           </li>
         </div>
-        <div className='bio-container'>
+        <div className='rectangle-container'>
           <li>
             <a href="https://github.com/nela-jankechova/">
               GitHub
             </a>
           </li>
         </div>
-        <div className='bio-container'>
+        <div className='rectangle-container'>
           <li>
             <a href="https://www.linkedin.com/in/nela-jankechova-38882416b/">
               LinkedIn
@@ -152,7 +136,7 @@ function App() {
           </li>
         </div>
         <img src={rosehip} className='small' />
-        <div className='bio-container'>
+        <div className='rectangle-container'>
           <li>
             <a href="https://fontstruct.com/fontstructions/show/2611132/fields-of-mistria">
               Download my Fields of Mistria Font
