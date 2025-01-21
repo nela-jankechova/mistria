@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import GridItem from './GridItem.jsx'
 import Portrait from './Portrait.jsx'
 import Downloader from './Downloader.jsx'
@@ -10,8 +10,6 @@ import job from './assets/job_icon.webp'
 import logo from './assets/logo.png'
 import rosehip from './assets/rose_hip.png'
 
-
-
 function App() {
 
   const [checked, setChecked] = useState(true);
@@ -20,6 +18,10 @@ function App() {
   const handleCheckboxClick = () => {
     setChecked(!checked);
   };
+
+  useEffect(() => {
+    document.title = 'Mistria Profile Maker';
+  }, []);
 
   return (
     <div className='panel-layout'>
