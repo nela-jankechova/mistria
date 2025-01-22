@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import './styles/Portrait.css'
+import './styles/Portrait.scss'
 import example from './assets/example_portrait.png'
 
 const Portrait = function () {

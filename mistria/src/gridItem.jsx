@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react'
-import './styles/GridItem.css'
+import './styles/GridItem.scss'
 import unknown from './assets/unknown_icon.png'
 
 const GridItem = function () {

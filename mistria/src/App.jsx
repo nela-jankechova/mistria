@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import GridItem from './GridItem.jsx'
 import Portrait from './Portrait.jsx'
 import Downloader from './Downloader.jsx'
-import './styles/App.css'
+import './styles/App.scss'
 import birthday from './assets/birthday_icon.webp'
 import heart from './assets/heart_icon.webp'
 import player from './assets/player_icon.png'
@@ -29,11 +29,11 @@ function App() {
         <img src={logo} className='fit' />
         <h1>Profile Maker</h1>
         <h2>About</h2>
-        <text>This is a profile maker inspired by NPC Studio's <a href="Fields of Mistria">Fields of Mistria</a>. Create your own character page as it would appear in the game!</text>
+        <text>This is a profile maker inspired by NPC Studio's <a target="_blank" rel="noopener noreferrer" href="https://www.fieldsofmistria.com/">Fields of Mistria</a>. Create your own character page as it would appear in the game!</text>
         <h2>Instructions</h2>
-        <text>Click on the profile or any of the liked items to upload your own image. You can download game sprites from the <a href="https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki">Fields of Mistria Wiki</a>.</text>
+        <text>Click on the profile or any of the liked items to upload your own image. You can download game sprites from the <a target="_blank" rel="noopener noreferrer" href="https://fieldsofmistria.wiki.gg/wiki/Fields_of_Mistria_Wiki">Fields of Mistria Wiki</a>.</text>
         <div className='rectangle-container'>
-          <text>Tip: Arrange your likes and loves in alpahebtical order.</text>
+          <text>Tip: Arrange your likes and loves in alphabetical order.</text>
         </div>
         <div>
           <input type="checkbox" checked={checked}
@@ -136,21 +136,21 @@ function App() {
         <text>This page was made with love by Nela Jankechova, Toronto-based biologist and programmer. Please reach out!</text>
         <div className='rectangle-container'>
           <li>
-            <a href="mailto:nelajankechova@gmail.com">
+            <a target="_blank" rel="noopener noreferrer" href="mailto:nelajankechova@gmail.com">
               Email
             </a>
           </li>
         </div>
         <div className='rectangle-container'>
           <li>
-            <a href="https://github.com/nela-jankechova/">
+            <a target="_blank" rel="noopener noreferrer" href="https://github.com/nela-jankechova/">
               GitHub
             </a>
           </li>
         </div>
         <div className='rectangle-container'>
           <li>
-            <a href="https://www.linkedin.com/in/nela-jankechova-38882416b/">
+            <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/nela-jankechova-38882416b/">
               LinkedIn
             </a>
           </li>
@@ -158,7 +158,7 @@ function App() {
         <img src={rosehip} className='small' />
         <div className='rectangle-container'>
           <li>
-            <a href="https://fontstruct.com/fontstructions/show/2611132/fields-of-mistria">
+            <a target="_blank" rel="noopener noreferrer" href="https://fontstruct.com/fontstructions/show/2611132/fields-of-mistria">
               Download my Fields of Mistria Font
             </a>
           </li>
